@@ -174,7 +174,7 @@ class Job(object):
         self.interval = interval  # pause interval * unit between runs
         self.latest = None  # upper limit to the interval
         self.job_func = None  # the job job_func to run
-        self.cron_callback = ""
+        self.cron_callback = None
         self.unit = None  # time units, e.g. 'minutes', 'hours', ...
         self.at_time = None  # optional time at which this job runs
         self.last_run = None  # datetime of the last run
